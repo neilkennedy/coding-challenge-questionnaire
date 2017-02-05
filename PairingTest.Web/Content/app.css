@@ -1,0 +1,83 @@
+﻿html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  height: 50px;
+  background-color: #66BD00;
+  font-size: 2.5em;
+  color: white;
+}
+
+#questionnaire {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+.question {
+  padding-bottom: 20px;
+}
+
+.question span {
+  display: inline-block;
+  padding-right: 10px;
+  width: 250px;
+  text-align: right;
+}
+
+.question input {
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1.5em;
+  width: calc(100% - 255px);
+}
+
+#questionnaire button {
+  float: right;
+  border: 1px solid #c44e00;
+  background: #DD5800;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+@media (max-width: 500px) {
+  #questionnaire {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .question span {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  .question input {
+    display: block;
+    width: 100%;
+  }
+}

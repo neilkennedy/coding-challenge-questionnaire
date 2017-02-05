@@ -1,0 +1,14 @@
+﻿{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "sourceMap": true
+  },
+  "allowJs": false,
+  "include": [
+    "Scripts/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -12,7 +12,7 @@ namespace PairingTest.Web.Controllers
 
         public ViewResult Index()
         {
-            return View(new QuestionnaireViewModel());
+            return View();
         }
     }
 }

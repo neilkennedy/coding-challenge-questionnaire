@@ -1,10 +1,30 @@
-﻿@model PairingTest.Web.Models.QuestionnaireViewModel
-
-<html>
+﻿<html>
     <head>
-        <title>@Model.QuestionnaireTitle</title>
+        <title>Coding Challenge: Questionnaire</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="~/Content/app.css" rel="stylesheet" />
     </head>
     <body>
-              
+      <header>
+        Questionnaire
+      </header>
+      <div id="questionnaire" style="display:none" v-show="questionnaire.questions.length">
+        <h1>{{questionnaire.title}}</h1>
+        <div id="questions">
+          <div class="question" v-for="question in questionnaire.questions">
+            <span>{{question.title}}</span>
+            <input type="text" v-model="question.answer" />
+          </div>
+        </div>
+        <button v-on:click="next">Next</button>
+      </div>
+
+      <script src="~/Scripts/vue.js"></script>
+      <script src="~/Scripts/bundle.js"></script>
+      <script>
+        let app = new App.default('#questionnaire');
+        app.download();
+      </script>
     </body>
 </html>

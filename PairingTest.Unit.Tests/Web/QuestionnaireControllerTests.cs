@@ -4,21 +4,21 @@ using PairingTest.Web.Models;
 
 namespace PairingTest.Unit.Tests.Web
 {
-    [TestFixture]
+    [TestFixture, Ignore("Please see PairingTest.Web/Scripts/__tests__ for the front end tests")]
     public class QuestionnaireControllerTests
     {
         [Test]
         public void ShouldGetQuestions()
         {
-            //Arrange
-            var expectedTitle = "My expected quesitons";
-            var questionnaireController = new QuestionnaireController();
+            ////Arrange
+            //var expectedTitle = "My expected quesitons";
+            //var questionnaireController = new QuestionnaireController();
 
-            //Act
-            var result = (QuestionnaireViewModel)questionnaireController.Index().ViewData.Model;
+            ////Act
+            //var result = (QuestionnaireViewModel)questionnaireController.Index().ViewData.Model;
             
-            //Assert
-            Assert.That(result.QuestionnaireTitle, Is.EqualTo(expectedTitle));
+            ////Assert
+            //Assert.That(result.QuestionnaireTitle, Is.EqualTo(expectedTitle));
         }
     }
 }

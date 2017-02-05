@@ -1,0 +1,19 @@
+{
+  "name": "questionnaire",
+  "version": "0.0.1",
+  "description": "Coding Challenge - Questionnaire",
+  "author": "Neil Kennedy",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "jest": "^18.1.0",
+    "tsify": "^3.0.1",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "browserify --debug --standalone App scripts/typescript/app.ts -p [ tsify ] > scripts/bundle.js",
+    "test": "jest"
+  },
+  "-vs-binding": { "AfterBuild": ["build", "test"], "ProjectOpened": ["install"] }
+}
